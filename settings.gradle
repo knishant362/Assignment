@@ -1,0 +1,2 @@
+rootProject.name = "OyeLabs Assignment"
+include ':app'
