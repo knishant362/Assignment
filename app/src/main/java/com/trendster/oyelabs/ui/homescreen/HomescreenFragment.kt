@@ -86,13 +86,13 @@ class HomescreenFragment : Fragment() {
         viewModel.topOfferResponse.observe(
             viewLifecycleOwner,
             {
-                topOfferAdapter.setData(it)
+                topOfferAdapter.submitList(it)
             }
         )
         viewModel.exclusiveOfferResponse.observe(
             viewLifecycleOwner,
             {
-                exclusiveOfferAdapter.setData(it)
+                exclusiveOfferAdapter.submitList(it)
             }
         )
         viewModel.groceriesResponse.observe(
@@ -104,7 +104,7 @@ class HomescreenFragment : Fragment() {
         viewModel.bestSellingResponse.observe(
             viewLifecycleOwner,
             {
-                bestSellingAdapter.setData(it)
+                bestSellingAdapter.submitList(it)
             }
         )
     }
